@@ -1,0 +1,36 @@
+{
+  "name": "rxn-parser",
+  "version": "0.0.1",
+  "description": "SDF parser",
+  "main": "./src/index.js",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --require should --reporter mocha-better-spec-reporter --recursive",
+    "build": "cheminfo build --root SDFParser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cheminfo-js/rxn-parser.git"
+  },
+  "keywords": [
+    "sdf",
+    "parser",
+    "rxn",
+    "v2000"
+  ],
+  "author": "Luc Patiny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo-js/rxn-parser/issues"
+  },
+  "homepage": "https://github.com/cheminfo-js/rxn-parser",
+  "devDependencies": {
+    "cheminfo-tools": "^1.0.2",
+    "mocha": "^2.2.5",
+    "mocha-better-spec-reporter": "^2.1.1",
+    "should": "^7.0.2"
+  }
+}
