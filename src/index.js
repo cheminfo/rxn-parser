@@ -38,6 +38,16 @@ function parse(rxn) {
     var numberReagents=lines[4].substring(0,3) >> 0;
     var numberProducts=lines[4].substring(3,6) >> 0;
 
+    // hack for JSME
+    var thirdNumber=lines[4].substring(6,9) >> 0; // for jsme
+
+    if (thirdNumber && rxnParts[1]) {
+        let lines=rxnParts[1].split(crlf);
+        if (lines[0]) {
+            numberReagents=lines[0].trim().replace(/>[^>]*$/,'').split(/[.>]/).length;
+         }
+    }
+
     if (numberReagents+numberProducts!=rxnParts.length-1) throw new Error('not the correct number of molecules');
 
     for (var i=1; i<rxnParts.length; i++) {
