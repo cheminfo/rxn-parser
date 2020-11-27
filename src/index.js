@@ -1,4 +1,4 @@
-function parse(rxn) {
+export default function parse(rxn) {
   if (typeof rxn !== 'string') {
     throw new TypeError('Parameter "rxn" must be a string');
   }
@@ -63,5 +63,3 @@ function parse(rxn) {
   }
   return result;
 }
-
-module.exports = parse;

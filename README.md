@@ -14,9 +14,9 @@ Parse the RXN format.
 ## Usage
 
 ```js
-import library from 'rxn-parser';
+import parse from 'rxn-parser';
 
-const result = library(args);
+const result = parse(args);
 // result is ...
 ```
 
