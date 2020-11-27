@@ -5,11 +5,12 @@
 [![Test coverage][codecov-image]][codecov-url]
 [![npm download][download-image]][download-url]
 
-Parse the RXN format.
+Parse the RXN format
 
 ## Installation
 
 `$ npm i rxn-parser`
+
 
 ## Usage
 
