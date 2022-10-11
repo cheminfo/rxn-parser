@@ -6,7 +6,7 @@ import parse from '..';
 const rxn = readFileSync(join(__dirname, 'test.rxn'), 'utf-8');
 
 const jsme = readFileSync(join(__dirname, 'jsme.rxn'), 'utf-8');
-describe('RXN Parser', function () {
+describe('RXN Parser', () => {
   let result = parse(rxn);
 
   it('Check result', () => {
@@ -38,7 +38,7 @@ describe('RXN Parser', function () {
     expect(resultJsme).toHaveProperty('reagents');
     expect(resultJsme).toHaveProperty('products');
   });
-  it('Check products jsme', function () {
+  it('Check products jsme', () => {
     expect(resultJsme.reagents).toHaveLength(4);
     expect(resultJsme.products).toHaveLength(3);
   });
