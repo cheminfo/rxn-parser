@@ -1,6 +1,6 @@
 {
   "name": "rxn-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse the RXN format",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -31,7 +31,6 @@
   "jest": {
     "testEnvironment": "node"
   },
-
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.22.5",
     "@types/jest": "^29.5.3",
