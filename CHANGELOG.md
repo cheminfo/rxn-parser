@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/cheminfo/rxn-parser/compare/v0.1.2...v0.1.3) (2023-08-07)
+
+
+### Documentation
+
+* add jsdoc and allow TextData ([2e61f15](https://github.com/cheminfo/rxn-parser/commit/2e61f1520057511786b3ebb3f4a90cf31f6b8394))
+
 ## [0.1.2](https://github.com/cheminfo/rxn-parser/compare/v0.1.1...v0.1.2) (2023-08-07)
 
 
