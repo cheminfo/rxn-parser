@@ -11,7 +11,6 @@ Parse the RXN format
 
 `$ npm i rxn-parser`
 
-
 ## Usage
 
 ```js
@@ -29,7 +28,7 @@ const result = parse(args);
 
 [npm-image]: https://img.shields.io/npm/v/rxn-parser.svg
 [npm-url]: https://www.npmjs.com/package/rxn-parser
-[ci-image]: https://github.com/cheminfo/rxn-parser/workflows/Node.js%20CI/badge.svg?branch=master
+[ci-image]: https://github.com/cheminfo/rxn-parser/workflows/Node.js%20CI/badge.svg?branch=main
 [ci-url]: https://github.com/cheminfo/rxn-parser/actions?query=workflow%3A%22Node.js+CI%22
 [codecov-image]: https://img.shields.io/codecov/c/github/cheminfo/rxn-parser.svg
 [codecov-url]: https://codecov.io/gh/cheminfo/rxn-parser
