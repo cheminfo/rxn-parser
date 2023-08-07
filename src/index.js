@@ -1,7 +1,13 @@
+import { ensureString } from 'ensure-string';
+
+/**
+ * Parse a rxn file and return an object with reagents and products
+ * @param {import('cheminfo-types').TextData} rxn
+ * @returns
+ */
+
 export default function parse(rxn) {
-  if (typeof rxn !== 'string') {
-    throw new TypeError('Parameter "rxn" must be a string');
-  }
+  rxn = ensureString(rxn)
   // we will find the delimiter in order to be much faster and not use regular expression
   let header = rxn.substr(0, 1000);
   let crlf = '\n';
