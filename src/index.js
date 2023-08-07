@@ -7,7 +7,7 @@ import { ensureString } from 'ensure-string';
  */
 
 export default function parse(rxn) {
-  rxn = ensureString(rxn)
+  rxn = ensureString(rxn);
   // we will find the delimiter in order to be much faster and not use regular expression
   let header = rxn.substr(0, 1000);
   let crlf = '\n';
