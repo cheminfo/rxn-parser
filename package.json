@@ -1,6 +1,6 @@
 {
   "name": "rxn-parser",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Parse the RXN format",
   "main": "lib/index.js",
   "module": "src/index.js",
