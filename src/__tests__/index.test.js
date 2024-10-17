@@ -1,11 +1,13 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+import { describe, it, expect } from 'vitest';
 
 import parse from '..';
 
-const rxn = readFileSync(join(__dirname, 'test.rxn'), 'utf-8');
+const rxn = readFileSync(join(__dirname, 'test.rxn'), 'utf8');
 
-const jsme = readFileSync(join(__dirname, 'jsme.rxn'), 'utf-8');
+const jsme = readFileSync(join(__dirname, 'jsme.rxn'), 'utf8');
 describe('RXN Parser', () => {
   let result = parse(rxn);
 

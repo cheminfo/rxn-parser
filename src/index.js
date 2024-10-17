@@ -9,11 +9,11 @@ import { ensureString } from 'ensure-string';
 export default function parse(rxn) {
   rxn = ensureString(rxn);
   // we will find the delimiter in order to be much faster and not use regular expression
-  let header = rxn.substr(0, 1000);
+  let header = rxn.slice(0, 1000);
   let crlf = '\n';
-  if (header.indexOf('\r\n') > -1) {
+  if (header.includes('\r\n')) {
     crlf = '\r\n';
-  } else if (header.indexOf('\r') > -1) {
+  } else if (header.includes('\r')) {
     crlf = '\r';
   }
 
@@ -40,11 +40,11 @@ export default function parse(rxn) {
   let lines = header.split(crlf);
   if (lines.length < 5) throw new Error('incorrect number of lines in header');
 
-  let numberReagents = lines[4].substring(0, 3) >> 0;
-  let numberProducts = lines[4].substring(3, 6) >> 0;
+  let numberReagents = lines[4].slice(0, 3) >> 0;
+  let numberProducts = lines[4].slice(3, 6) >> 0;
 
   // hack for JSME
-  let thirdNumber = lines[4].substring(6, 9) >> 0; // for jsme
+  let thirdNumber = lines[4].slice(6, 9) >> 0; // for jsme
 
   if (thirdNumber && rxnParts[1]) {
     let lines = rxnParts[1].split(crlf);
