@@ -1,6 +1,6 @@
 {
   "name": "rxn-parser",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Parse the RXN format",
   "type": "module",
   "exports": {
