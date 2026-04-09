@@ -82,3 +82,6 @@ tags
 *.code-workspace
 
 dist
+
+# Claude
+.claude
