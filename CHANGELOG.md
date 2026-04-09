@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/cheminfo/rxn-parser/compare/v1.0.0...v2.0.0) (2026-04-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to latest standards
+
+### chore\
+
+* update to latest standards ([51d3125](https://github.com/cheminfo/rxn-parser/commit/51d312504a35f38b04e22953645ab4af4ad3f46e))
+
 ## [1.0.0](https://github.com/cheminfo/rxn-parser/compare/v0.1.2...v1.0.0) (2025-08-15)
 
 
